@@ -7,3 +7,4 @@ function Vehicle(model, color, year, country) {
     this.year = year;
     this.country = country;
 }
+

@@ -432,6 +432,7 @@
 | 382 | [What are the different ways to deal with Asynchronous Code](#what-are-the-different-ways-to-deal-with-asynchronous-code)                                         |
 | 383 | [How to cancel a fetch request](#how-to-cancel-a-fetch-request)                                                                                                   |
 | 384 | [What is web speech API](#what-is-web-speech-api)                                                                                                                 |
+what is shadow
 | 385 | [What is minimum timeout throttling](#what-is-minimum-timeout-throttling)                                                                                         |
 | 386 | [How do you implement zero timeout in modern browsers](#how-do-you-implement-zero-timeout-in-modern-browsers)                                                     |
 | 387 | [What are tasks in event loop](#what-are-tasks-in-event-loop)                                                                                                     |
@@ -485,8 +486,7 @@
 | 435 | [What is throttling?](#what-is-throttling)                                                                                                                        |
 | 436 | [What is optional chaining?](#what-is-optional-chaining)                                                                                                          |
 | 437 | [What is an environment record?](#what-is-an-environment-record)                                                                                                  |
-| 438 | [How to verify if a variable is an array?](#how-to-verify-if-a-variable-is-an-array)                                                                              |
-| 439 | [What is pass by value and pass by reference?](#what-is-pass-by-value-and-pass-by-reference)                                                                      |
+| 438 | [How to verify if a variable is an array?](#how-to-verify-if-a-variable-is-an-array)                                                                    (#what-is-pass-by-value-and-pass-by-reference)                                                                      |
 | 440 | [What are the differences between primitives and non-primitives?](#what-are-the-differences-between-primitives-and-non-primitives)                                |
 | 441 | [What are hidden classes?](#what-are-hidden-classes)                                                                                                              |
 | 442 | [What is inline caching?](#what-is-inline-caching)                                                                                                                |
@@ -593,8 +593,7 @@
       })();
       ```
 
-      **[⬆ Back to Top](#table-of-contents)**
-
+     
 2. ### What is a prototype chain
 
    **Prototype chaining** is used to build new types of objects based on existing ones. It is similar to inheritance in a class based language.
@@ -603,7 +602,7 @@
 
    ![Screenshot](images/prototype_chain.png)
 
-   **[⬆ Back to Top](#table-of-contents)**
+   
 
 3. ### What is the difference between Call, Apply and Bind
 
@@ -611,7 +610,7 @@
 
    **Call:** The call() method invokes a function with a given `this` value and arguments provided one by one
 
-   ```javascript
+   javascript
    var employee1 = { firstName: "John", lastName: "Rodson" };
    var employee2 = { firstName: "Jimmy", lastName: "Baily" };
 
@@ -663,7 +662,7 @@
 
    Whereas Bind creates a new function that will have `this` set to the first parameter passed to bind().
 
-   **[⬆ Back to Top](#table-of-contents)**
+   
 
 4. ### What is JSON and its common operations
 
@@ -681,8 +680,7 @@
    JSON.stringify(object);
    ```
 
-   **[⬆ Back to Top](#table-of-contents)**
-
+   
 5. ### What is the purpose of the array slice method
 
    The **slice()** method returns the selected elements in an array as a new array object. It selects the elements starting at the given start argument, and ends at the given optional end argument without including the last element. If you omit the second argument then it selects till the end.
@@ -718,8 +716,7 @@
 
    **Note:** Splice method modifies the original array and returns the deleted array.
 
-   **[⬆ Back to Top](#table-of-contents)**
-
+   
 7. ### What is the difference between slice and splice
 
    Some of the major difference in a tabular form
@@ -828,7 +825,7 @@
     const unaryFunction = (a) => console.log(a + 10); // Add 10 to the given argument and display the value
     ```
 
-    **[⬆ Back to Top](#table-of-contents)**
+    
 
 15. ### What is the currying function
 
@@ -961,7 +958,7 @@
     }
     ```
 
-    **[⬆ Back to Top](#table-of-contents)**
+   
 
 21. ### What is the Temporal Dead Zone
 
@@ -1075,7 +1072,7 @@
 
     This hoisting makes functions to be safely used in code before they are declared.
 
-    **[⬆ Back to Top](#table-of-contents)**
+  
 
 26. ### What are classes in ES6
 
@@ -1156,14 +1153,13 @@
 
     Scope is the accessibility of variables, functions, and objects in some particular part of your code during runtime. In other words, scope determines the visibility of variables and other resources in areas of your code.
 
-    **[⬆ Back to Top](#table-of-contents)**
+    
 
 31. ### What is a service worker
 
     A Service worker is basically a script (JavaScript file) that runs in the background, separate from a web page and provides features that don't need a web page or user interaction. Some of the major features of service workers are Rich offline experiences(offline first web application development), periodic background syncs, push notifications, intercept and handle network requests and programmatically managing a cache of responses.
 
-    **[⬆ Back to Top](#table-of-contents)**
-
+    
 32. ### How do you manipulate DOM using a service worker
 
     Service worker can't access the DOM directly. But it can communicate with the pages it controls by responding to messages sent via the `postMessage` interface, and those pages can manipulate the DOM.
@@ -1536,14 +1532,12 @@
     });
     ```
 
-    **[⬆ Back to Top](#table-of-contents)**
-
+    
 57. ### What are server-sent events
 
     Server-sent events (SSE) is a server push technology enabling a browser to receive automatic updates from a server via HTTP connection without resorting to polling. These are a one way communications channel - events flow from server to client only. This has been used in Facebook/Twitter updates, stock price updates, news feeds etc.
 
-    **[⬆ Back to Top](#table-of-contents)**
-
+   
 58. ### How do you receive server-sent event notifications
 
     The EventSource object is used to receive server-sent event notifications. For example, you can receive messages from server as below,
@@ -1712,8 +1706,7 @@
     }
     ```
 
-    **[⬆ Back to Top](#table-of-contents)**
-
+    
 69. ### What is the purpose of double exclamation
 
     The double exclamation or negation(!!) ensures the resulting type is a boolean. If it was falsey (e.g. 0, null, undefined, etc.), it will be false, otherwise, true.
@@ -1733,20 +1726,20 @@
 
     **Note:** The expression !! is not an operator, but it is just twice of ! operator.
 
-    **[⬆ Back to Top](#table-of-contents)**
+    
 
 70. ### What is the purpose of the delete operator
 
     The delete keyword is used to delete the property as well as its value.
 
-    ```javascript
+        javascript
     var user = { name: "John", age: 20 };
     delete user.age;
 
     console.log(user); // {name: "John"}
-    ```
+    
 
-    **[⬆ Back to Top](#table-of-contents)**
+   
 
 71. ### What is typeof operator
 
@@ -1938,14 +1931,13 @@
     1. Top to Bottom(Event Capturing)
     2. Bottom to Top (Event Bubbling)
 
-    **[⬆ Back to Top](#table-of-contents)**
+    
 
 86. ### What is event bubbling
 
     Event bubbling is a type of event propagation where the event first triggers on the innermost target element, and then successively triggers on the ancestors (parents) of the target element in the same nesting hierarchy till it reaches the outermost DOM element.
 
-    **[⬆ Back to Top](#table-of-contents)**
-
+   
 87. ### What is event capturing
 
     Event capturing is a type of event propagation where the event is first captured by the outermost element, and then successively triggers on the descendants (children) of the target element in the same nesting hierarchy till it reaches the innermost DOM element.
@@ -2014,7 +2006,7 @@
     1. It makes little complex code
     2. You need to load a polyfill if ES6 is not supported
 
-    **[⬆ Back to Top](#table-of-contents)**
+   
 
 94. ### What is the difference between an attribute and a property
 
@@ -2110,7 +2102,7 @@
 
      JavaScript was created by Brendan Eich in 1995 during his time at Netscape Communications. Initially it was developed under the name `Mocha`, but later the language was officially called `LiveScript` when it first shipped in beta releases of Netscape.
 
-     **[⬆ Back to Top](#table-of-contents)**
+    
 
 102. ### What is the use of preventDefault method
 
@@ -4096,7 +4088,7 @@
      6. bigint
      7. symbol
 
-     **[⬆ Back to Top](#table-of-contents)**
+    
 
 224. ### What are the different ways to access object properties
 
@@ -4120,7 +4112,6 @@
      objectName[expression];
      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
 
 225. ### What are the function parameter rules
 
@@ -4166,7 +4157,7 @@
      }
      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+  
 
 228. ### What are the different error names from error object
 
@@ -4180,7 +4171,7 @@
      | TypeError | An error due to a type error |
      | URIError | An error due to encodeURI() |
 
-     **[⬆ Back to Top](#table-of-contents)**
+     
 
 229. ### What are the various statements in error handling
 
@@ -4191,7 +4182,7 @@
      3. **throw:** This statement is used to create custom errors.
      4. **finally:** This statement is used to execute code after try and catch regardless of the result.
 
-     **[⬆ Back to Top](#table-of-contents)**
+     
 
 230. ### What are the two types of loops in javascript
 
@@ -4222,13 +4213,13 @@
      console.log(new Intl.DateTimeFormat("en-AU").format(date)); // 07/08/2019
      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+
 
 234. ### What is an Iterator
 
      An iterator is an object which defines a sequence and a return value upon its termination. It implements the Iterator protocol with a `next()` method which returns an object with two properties: `value` (the next value in the sequence) and `done` (which is true if the last value in the sequence has been consumed).
 
-     **[⬆ Back to Top](#table-of-contents)**
+  
 
 235. ### How does synchronous iteration works
 
@@ -4594,7 +4585,7 @@
       console.log(employeeObject.name);
      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+     
 
 257. ### How do you call the constructor of a parent class
 
@@ -4953,9 +4944,8 @@
 
      ```javascript
      var DaysEnum = Object.freeze({"monday":1, "tuesday":2, "wednesday":3, ...})
-     ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+
 
 279. ### What is an enum
 
@@ -5003,7 +4993,7 @@
      console.log(descriptorsObject.a.value); // 1
      ```
 
-     **[⬆ Back to Top](#table-of-contents)**
+  
 
 282. ### What are the attributes provided by a property descriptor
 
@@ -6141,7 +6131,7 @@
 
      Now if you change `empDetailsDeepCopy.name`, it will only affect `empDetailsDeepCopy` & not `empDetails`
 
-     **[⬆ Back to Top](#table-of-contents)**
+                   
 
 346. ### How do you create specific number of copies of a string
 
@@ -6973,13 +6963,13 @@
 
      Some of the most common use cases of observables are web sockets with push notifications, user input changes, repeating intervals, etc
 
-     **[⬆ Back to Top](#table-of-contents)**
+    
 
 401. ### What is RxJS
 
      RxJS (Reactive Extensions for JavaScript) is a library for implementing reactive programming using observables that makes it easier to compose asynchronous or callback-based code. It also provides utility functions for creating and working with observables.
 
-     **[⬆ Back to Top](#table-of-contents)**
+     
 
 402. ### What is the difference between Function constructor and function declaration
 
@@ -7481,7 +7471,7 @@
 
      Since for..in loop iterates over the keys of the object, the first loop logs 0, 1, 2 and newProp while iterating over the array object. The for..of loop iterates over the values of a arr data structure and logs a, b, c in the console.
 
-     **[⬆ Back to Top](#table-of-contents)**
+     
 
 419. ### How do you define instance and non-instance properties
 
@@ -7970,7 +7960,7 @@
 439. ### What is pass by value and pass by reference?
      Pass-by-value creates a new space in memory and makes a copy of a value. Primitives such as string, number, boolean etc will actually create a new copy. Hence, updating one value doesn't impact the other value. i.e, The values are independent of each other.
 
-     ```javascript
+     ```javascriptsh
      let a = 5;
      let b = a;
 
@@ -8008,7 +7998,7 @@
      | Stored in Stack | Stored in heap |
      | Contain certain value | Can contain NULL too |
 
-     **[⬆ Back to Top](#table-of-contents)**
+    
 
 ### Coding Exercise
 
